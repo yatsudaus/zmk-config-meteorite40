@@ -22,7 +22,7 @@
 #define DEBOUNCE_MS 7           // デバウンス時間 (ms)
 
 
-&trackball_listener {
+&trackball_listener: trackball_listener {
     scroller {
         layers = <0>;
         input-processors = <
