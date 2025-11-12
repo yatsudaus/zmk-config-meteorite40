@@ -70,7 +70,7 @@
 
     keymap {
         compatible = "zmk,keymap";
-        layout = &LAYOUT_split_space;
+        layout = &LAYOUT_2U_SPACE;
 
         win_default_layer {
             display-name = "BASE";
