@@ -5,10 +5,10 @@
 
 #define DEFAULT_CPI 500         // トラックボールの感度
 #define ROTATION_ANGLE 30       // トラックボールのY軸を回転
-#define CLIPPER_THRESHOLD 10    // スクロール時に斜めの値をクリップ
+#define CLIPPER_THRESHOLD 60    // スクロール時に斜めの値をクリップ
 
 #define SCROLL_LAYER_1 0          // スクロールを有効にするレイヤー1
-#define SCROLL_LAYER_2 1          // スクロールを有効にするレイヤー2
+//#define SCROLL_LAYER_2 1          // スクロールを有効にするレイヤー2
 #define SCROLL_LAYER_3 3          // スクロールを有効にするレイヤー3
 #define SCROLL_LAYER_4 4          // スクロールを有効にするレイヤー4
 #define SCROLL_LAYER_5 5          // スクロールを有効にするレイヤー5
