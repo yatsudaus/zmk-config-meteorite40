@@ -8,10 +8,10 @@
 #define CLIPPER_THRESHOLD 10    // スクロール時に斜めの値をクリップ
 
 #define SCROLL_LAYER_1 0          // スクロールを有効にするレイヤー1
-#define SCROLL_LAYER_1 1          // スクロールを有効にするレイヤー1
-#define SCROLL_LAYER_1 3          // スクロールを有効にするレイヤー1
-#define SCROLL_LAYER_1 4          // スクロールを有効にするレイヤー1
-#define SCROLL_LAYER_2 5          // スクロールを有効にするレイヤー2
+#define SCROLL_LAYER_2 1          // スクロールを有効にするレイヤー2
+#define SCROLL_LAYER_3 3          // スクロールを有効にするレイヤー3
+#define SCROLL_LAYER_4 4          // スクロールを有効にするレイヤー4
+#define SCROLL_LAYER_5 5          // スクロールを有効にするレイヤー5
 #define INVERT_X 0              // X軸のスクロールの反転
 #define INVERT_Y 1              // Y軸のスクロールの反転
 
