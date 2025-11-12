@@ -8,7 +8,7 @@
 #define CLIPPER_THRESHOLD 50    // スクロール時に斜めの値をクリップ
 
 #define SCROLL_LAYER_1 2          // スクロールを有効にするレイヤー1
-#define SCROLL_LAYER_2 0          // スクロールを有効にするレイヤー2
+#define SCROLL_LAYER_2 5          // スクロールを有効にするレイヤー2
 
 #define INVERT_X 0              // X軸のスクロールの反転
 #define INVERT_Y 1              // Y軸のスクロールの反転
@@ -20,6 +20,19 @@
 
 #define POLL_PERIOD_MS 20       // キースキャンのポーリング周期（ms）
 #define DEBOUNCE_MS 7           // デバウンス時間 (ms)
+
+
+&trackball_listener {
+    scroller {
+        layers = <0>;
+        input-processors = <
+            &zip_xy_to_scroll_mapper
+            &zip_scroll_scaler 3 1
+        >;
+    };
+};
+
+
 
 &spi0 {
     status = "okay";
