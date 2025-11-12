@@ -3,12 +3,12 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <input/processors.dtsi>
 
-#define DEFAULT_CPI 500         // トラックボールの感度
+#define DEFAULT_CPI 200         // トラックボールの感度
 #define ROTATION_ANGLE 30       // トラックボールのY軸を回転
 #define CLIPPER_THRESHOLD 50    // スクロール時に斜めの値をクリップ
 
 #define SCROLL_LAYER_1 2          // スクロールを有効にするレイヤー1
-#define SCROLL_LAYER_2 5          // スクロールを有効にするレイヤー2
+#define SCROLL_LAYER_2 0          // スクロールを有効にするレイヤー2
 
 #define INVERT_X 0              // X軸のスクロールの反転
 #define INVERT_Y 1              // Y軸のスクロールの反転

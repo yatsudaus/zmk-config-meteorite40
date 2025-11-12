@@ -19,14 +19,14 @@
     combos {
         compatible = "zmk,combos";
 
-        lang1 {
-            bindings = <&kp LANG1>;
+        LANG2 {
+            bindings = <&kp LANG2>;
             key-positions = <12 13>; /* D + F */
             layers = <0>;
         };
 
-        lang2 {
-            bindings = <&kp LANG2>;
+        lang1 {
+            bindings = <&kp LANG1>;
             key-positions = <22 23>; /* C + V */
             layers = <0>;
         };
