@@ -103,10 +103,10 @@
         win_default_layer {
             display-name = "sub-BASE";
             bindings = <
-                &tog_on &tog_on &tog_on &tog_on &tog_on                                 &tog_on &tog_on &tog_on &tog_on &tog_on          
-                &tog_on &tog_on &tog_on &tog_on &tog_on                                 &tog_on &tog_on &tog_on &tog_on &tog_on            
-                &tog_on &tog_on &tog_on &tog_on &tog_on &tog_on &tog_on &tog_on &tog_on &tog_on &tog_on &tog_on &tog_on &tog_on                   
-                                &kp LWIN  &mt LCTRL TAB        &lt 2 SPACE      &mkp MB1     &mkp MB2  &lt 3  SPACE  &mt LSHIFT A   &kp RALT
+                &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1                                         &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1          
+                &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1                                         &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1            
+                &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1                   
+                                              &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 
             >;
 
             sensor-bindings =
