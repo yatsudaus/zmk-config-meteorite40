@@ -156,11 +156,11 @@
             input-processors = <&sensor_rotation>,
                                <&xy_clipper>,
                                <&to_wheel>;
+        };
         
         scroller{
             layers = <0>;
             input-processors = <&zip_xy_to_scroll_mapper>;
-        }
         };
     };
 };
