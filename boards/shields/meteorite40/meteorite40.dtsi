@@ -171,12 +171,11 @@
             map = <INPUT_REL_WHEEL INPUT_REL_Y>,
                   <INPUT_REL_HWHEEL INPUT_REL_X>;
         };
-    };
-};
 
 &trackball_listener {
     input-processors = <&zip_scroll_to_xy_mapper>;
 };
+
 
 
     };
