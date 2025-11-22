@@ -144,6 +144,20 @@
         invert-y = <INVERT_Y>;
     };
 
+    input_processors {
+        zip_scroll_to_xy_mapper: zip_scroll_to_xy_mapper {
+            compatible = "zmk,input-processor-code-mapper";
+            #input-processor-cells = <0>;
+            type = <INPUT_EV_REL>;
+            map = <INPUT_REL_WHEEL INPUT_REL_Y>,
+                  <INPUT_REL_HWHEEL INPUT_REL_X>;
+        };
+
+    trackball_listener {
+        input-processors = <&zip_scroll_to_xy_mapper>;
+    };
+
+
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
@@ -161,15 +175,6 @@
         scroller{
             layers = <0>;
             input-processors = <&zip_xy_to_scroll_mapper>;
-        };
-
-    input_processors {
-        zip_scroll_to_xy_mapper: zip_scroll_to_xy_mapper {
-            compatible = "zmk,input-processor-code-mapper";
-            #input-processor-cells = <0>;
-            type = <INPUT_EV_REL>;
-            map = <INPUT_REL_WHEEL INPUT_REL_Y>,
-                  <INPUT_REL_HWHEEL INPUT_REL_X>;
         };
     };
 };
