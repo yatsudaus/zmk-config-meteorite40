@@ -147,7 +147,7 @@
             bindings = <
                 &kp ASTRK        &kp N7     &kp N8     &kp N9     &kp PLUS                        &kp LG(LS(S)) &kp LBRC  &kp RBRC &kp C_VOL_DN &kp C_VOL_UP
                 &kp SLASH        &kp N4     &kp N5     &kp N6     &kp MINUS                       &kp DOT       &kp LBKT  &kp RBKT      &kp DOWN     &kp RIGHT
-                &kp N0           &kp N1     &kp N2     &kp N3     &kp EQUAL  &mkp MB4  &mkp MB5   &zed_em_kay   &kp LG(LEFT)  &kp LG(UP)    &kp LG(DOWN) &kp LG(RIGHT)
+                &kp N0           &kp N1     &kp N2     &kp N3     &kp EQUAL  &mkp MB4  &mkp MB5   &none   &kp LG(LEFT)  &kp LG(UP)    &kp LG(DOWN) &kp LG(RIGHT)
                                         &trans           &trans     &trans     &trans    &trans        &trans  &trans    &trans 
             >;
 
