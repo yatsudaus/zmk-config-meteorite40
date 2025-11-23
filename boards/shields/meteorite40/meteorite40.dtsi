@@ -159,7 +159,7 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
         input-processors = <&sensor_rotation>,
-                           <&motion_scaler>;
+                           <&motion_scaler>,
                            <&zip_xy_scaler 2 1>;
 
         scroll {
