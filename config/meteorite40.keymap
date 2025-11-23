@@ -167,9 +167,9 @@
         layer_3 {
             display-name = "NUM / ARROW";
             bindings = <
-                &kp ASTRK        &kp N7     &kp N8     &kp N9     &kp PLUS                        &kp LG(LS(S)) &kp LBRC  &kp RBRC &kp C_VOL_DN &kp C_VOL_UP
-                &kp SLASH        &kp N4     &kp N5     &kp N6     &kp MINUS                       &kp DOT       &kp LBKT  &kp RBKT      &kp DOWN     &kp RIGHT
-                &kp N0           &kp N1     &kp N2     &kp N3     &kp EQUAL  &mkp MB4  &mkp MB5   &none   &kp LG(LEFT)  &kp LG(UP)    &kp LG(DOWN) &kp LG(RIGHT)
+                &kp JP_ASTERISK        &kp N7     &kp N8     &kp N9     &kp JP_PLUS                        &kp LG(LS(S)) &kp JP_LBRACKET  &kp JP_RBRACKET &kp JP_UNDERSCORE &kp JP_AT
+                &kp SLASH        &kp N4     &kp N5     &kp N6     &kp MINUS                       &kp EQUAL       &kp JP_LPAREN  &kp JP_RPAREN      &kp DOWN     &kp RIGHT
+                &kp N0           &kp N1     &kp N2     &kp N3     &kp DOT  &mkp MB4  &mkp MB5   &none   &kp JP_LBRACE  &kp JP_RBRACE    &kp LG(DOWN) &kp LG(RIGHT)
                                         &trans           &trans     &trans     &trans    &trans        &trans  &trans    &trans 
             >;
 
