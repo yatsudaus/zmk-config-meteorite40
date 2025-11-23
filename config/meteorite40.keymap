@@ -103,9 +103,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &tog_off 1 &tog_on 2>
+                = <&macro_press &tog_off 0 &tog_on 2>
                 , <&macro_pause_for_release>
-                , <&macro_press &tog_off 2 &tog_on 1>
+                , <&macro_press &tog_off 2 &tog_on 0>
                 ;
         };
     };
