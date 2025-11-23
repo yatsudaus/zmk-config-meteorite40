@@ -7,8 +7,8 @@
 #define ROTATION_ANGLE 30       // トラックボールのY軸を回転
 #define CLIPPER_THRESHOLD 50    // スクロール時に斜めの値をクリップ
 
-#define SCROLL_LAYER_1 2          // スクロールを有効にするレイヤー1
-#define SCROLL_LAYER_2 5          // スクロールを有効にするレイヤー2
+#define SCROLL_LAYER_1 0          // スクロールを有効にするレイヤー1
+#define SCROLL_LAYER_2 1          // スクロールを有効にするレイヤー2
 
 #define INVERT_X 0              // X軸のスクロールの反転
 #define INVERT_Y 1              // Y軸のスクロールの反転
@@ -169,9 +169,13 @@
                                <&to_wheel>;
         };
         
+        scroller{
+            layers = <0>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
+        };
 
         scroll_to{
-            layers = <2>;
+            layers = <2 3 4>;
             input-processors = <&zip_scroll_to_xy_mapper>;
         };
     };
