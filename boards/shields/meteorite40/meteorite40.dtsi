@@ -169,13 +169,9 @@
                                <&to_wheel>;
         };
         
-//        scroller{
-//            layers = <0>;
-//            input-processors = <&zip_xy_to_scroll_mapper>;
-//        };
 
         scroll_to{
-//            layers = <2>;
+            layers = <2>;
             input-processors = <&zip_scroll_to_xy_mapper>;
         };
     };
