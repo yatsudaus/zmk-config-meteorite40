@@ -108,6 +108,14 @@
                 , <&macro_press &tog_off 2 &tog_on 0>
                 ;
         };
+
+        tb: toglle_base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &tog_on 0 &tog_on 1>
+                ;
+        };
     };
 
     keymap {
@@ -117,10 +125,24 @@
         win_default_layer {
             display-name = "sub-BASE";
             bindings = <
-                &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1                     &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1          
-                &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1                     &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1            
-                &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1                   
-                                    &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &to_mous &tog_on 1 &tog_on 1 &tog_on 1 
+                &tb &tb &tb &tb &tb                     &tb &tb &tb &tb &tb          
+                &tb &tb &tb &tb &tb                     &tb &tb &tb &tb &tb            
+                &tb &tb &tb &tb &tb &tb &tb &tb &tb &tb &tb &tb                   
+                                    &tb &tb &tb &tb &tb &tb &tb &tb 
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp LC(MINUS) LC(EQUAL)>, // RE0: ctrl + - / +,,,
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>; // RE1: volume down/up
+        };
+
+        scrollonly_layer {
+            display-name = "scroll";
+            bindings = <
+                &none &none &none &none &none             &none &none &none &none &none          
+                &none &none &none &none &none             &none &none &none &none &none            
+                &none &none &none &none &none &none &none &none &none &none &none &none                   
+                            &none &none &none &none &none &none &none &none 
             >;
 
             sensor-bindings =
@@ -193,21 +215,6 @@
                 &bootloader  &none   &none   &none   &tog_off 1                                 &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
                 &none        &none   &none   &none   &none                                 &bt BT_CLR     &bt BT_CLR_ALL  &none         &none         &none
                 &none        &none   &none   &none   &none   &none           &none         &none          &none           &none         &none         &none
-                                                &trans       &trans  &trans  &trans  &trans  &trans          &trans        &trans
-            >;
-
-            sensor-bindings =
-                <&inc_dec_kp LC(MINUS) LC(EQUAL)>, // RE0: ctrl + - / +,,,
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>; // RE1: volume down/up
-
-        };
-
-        layer_6 {
-            display-name = "SETTING";
-            bindings = <
-                &bootloader  &none   &none   &none   &none                                 &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-                &none        &none   &none   &none   &none                                 &bt BT_CLR     &bt BT_CLR_ALL  &none         &none         &none
-                &none        &none   &none   &none   &none   &none           &kp N1         &none          &none           &none         &none         &none
                                                 &trans       &trans  &trans  &trans  &trans  &trans          &trans        &trans
             >;
 
