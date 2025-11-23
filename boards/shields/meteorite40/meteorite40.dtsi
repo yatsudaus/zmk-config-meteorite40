@@ -170,7 +170,7 @@
         };
         
         scroller{
-            layers = <0>;
+            layers = <0 1>;
             input-processors = <&zip_xy_to_scroll_mapper>;
         };
 
