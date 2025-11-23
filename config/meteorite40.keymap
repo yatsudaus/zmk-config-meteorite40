@@ -99,13 +99,13 @@
     };
 
     macros {
-        zed_em_kay: zed_em_kay {
+        to_mous: to_mous_rayer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp Z &kp M &kp K>
-                , <&macro_release &kp LSHFT>
+                = <&macro_press &tog_off 1 &tog_on 2>
+                , <&macro_pause_for_release>
+                , <&macro_press &tog_off 2 &tog_on 1>
                 ;
         };
     };
@@ -117,10 +117,10 @@
         win_default_layer {
             display-name = "sub-BASE";
             bindings = <
-                &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1                                         &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1          
-                &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1                                         &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1            
-                &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1                   
-                                              &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 
+                &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1                     &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1          
+                &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1                     &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1            
+                &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1                   
+                                    &tog_on 1 &tog_on 1 &tog_on 1 &tog_on 1 &to_mous &tog_on 1 &tog_on 1 &tog_on 1 
             >;
 
             sensor-bindings =
@@ -134,7 +134,7 @@
                 &kp Q        &kp W       &kp E        &kp R        &kp T                                  &kp Y        &kp U       &kp I       &kp O  &kp P
                 &mt LSHIFT A &kp S       &kp D        &kp F        &kp G                                 &kp H        &kp J       &kp K       &kp L  &mt LCTRL MINUS
                &kp Z        &kp X       &kp C        &kp V        &kp B        &mkp MB1     &mkp MB2    &kp N        &kp M       &kp COMMA   &kp DOT  &lt 5 SLASH
-                            &kp LWIN  &mt LCTRL TAB        &lt 2 SPACE      &mkp MB1     &to 1  &lt 3  SPACE  &mt LSHIFT A   &kp RALT
+                            &kp LWIN  &mt LCTRL TAB        &lt 2 SPACE      &mkp MB1     &to_mous  &lt 3  SPACE  &mt LSHIFT A   &kp RALT
             >;
 
             sensor-bindings =
