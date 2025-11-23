@@ -113,7 +113,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &tog_on 0 &tog_on 1>
+                = <&macro_press &tog_on 1 &tog_on 2>
                 ;
         };
     };
