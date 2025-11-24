@@ -98,10 +98,10 @@
         };
         mt_tm: mod_tap_to_mous {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <1>;
+            #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&to_mous>, <&kp>;
             display-name = "Mod-Tap";
         };
     };
