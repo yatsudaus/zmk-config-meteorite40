@@ -160,7 +160,7 @@
         device = <&trackball>;
         input-processors = <&sensor_rotation>,
                            <&motion_scaler>,
-                           <&zip_xy_scaler 3 1>;
+                           <&zip_xy_scaler 5 1>;
 
         scroll {
             layers = <SCROLL_LAYER_1 SCROLL_LAYER_2>;

@@ -96,7 +96,7 @@
             display-name = "Toggle Layer Off";
             toggle-mode = "off";
         };
-        mt_tm: mod_tap_to_mous {
+        mt_tm: mod_tap_to_mous { // 引数2個いる。もっとうまい書き方ありそう。
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
