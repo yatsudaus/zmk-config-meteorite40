@@ -96,6 +96,14 @@
             display-name = "Toggle Layer Off";
             toggle-mode = "off";
         };
+        mt_tm: mod_tap_to_mous {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <1>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+            display-name = "Mod-Tap";
+        };
     };
 
     macros {
