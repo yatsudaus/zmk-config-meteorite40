@@ -164,7 +164,7 @@
                 &kp Q        &kp W       &kp E        &kp R        &kp T                                  &kp Y        &kp U       &kp I       &kp O  &kp P
                 &mt LSHIFT A &kp S       &kp D        &kp F        &kp G                                 &kp H        &kp J       &kp K       &kp L  &mt LCTRL MINUS
                &kp Z        &kp X       &kp C        &kp V        &kp B        &mkp MB1     &mkp MB2    &kp N        &kp M       &kp COMMA   &kp DOT  &lt 6 SLASH
-                            &kp RALT  &mt LCTRL TAB        &lt 3 SPACE      &kp LWIN     &to_mous  &mt_tm SPACE  &mt LSHIFT A   &kp RALT
+                            &kp RALT  &mt LCTRL TAB        &lt 3 SPACE      &kp LWIN     &to_mous  &mt_tm SPACE SPACE  &mt LSHIFT A   &kp RALT
             >;
 
             sensor-bindings =
