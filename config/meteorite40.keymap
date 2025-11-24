@@ -96,15 +96,6 @@
             display-name = "Toggle Layer Off";
             toggle-mode = "off";
         };
-        
-        ltm: layer_tap_to_mous {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <1>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&to_mous>, <&kp>;
-            display-name = "Layer-Tap";
-        };
     };
 
     macros {
