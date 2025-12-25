@@ -7,19 +7,24 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      # revision: main
+      revision: v0.3
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: iwk7273
-      revision: main
+      # revision: main
+      revision: v0.3
     - name: zmk-feature-sensor_rotation
       remote: iwk7273
-      revision: main
+      # revision: main
+      revision: v0.3
     - name: zmk-feature-xy_clipper
       remote: iwk7273
-      revision: main
+      # revision: main
+      revision: v0.3
     - name: zmk-feature-scaling
       remote: iwk7273
-      revision: main
+      # revision: main
+      revision: v0.3
   self:
     path: config
