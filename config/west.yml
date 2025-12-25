@@ -19,12 +19,12 @@ manifest:
       revision: main
       # revision: v0.3
     - name: zmk-feature-xy_clipper
-      # remote: iwk7273
+      remote: iwk7273
       revision: main
-      revision: v0.3
+      # revision: v0.3
     - name: zmk-feature-scaling
-      # remote: iwk7273
+      remote: iwk7273
       revision: main
-      revision: v0.3
+      # revision: v0.3
   self:
     path: config
