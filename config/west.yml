@@ -15,9 +15,9 @@ manifest:
       revision: main
       # revision: v0.3
     - name: zmk-feature-sensor_rotation
-      # remote: iwk7273
+      remote: iwk7273
       revision: main
-      revision: v0.3
+      # revision: v0.3
     - name: zmk-feature-xy_clipper
       # remote: iwk7273
       revision: main
